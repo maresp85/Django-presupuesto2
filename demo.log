@@ -14,3 +14,5 @@
 2020-01-22 20:11:41,853 - billetera.views - Thread-16 -  INFO - Se ha consultado el Balance
 2020-01-27 19:10:56,919 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
 2020-01-27 19:10:58,242 - django.request - Thread-1 -  WARNING - Not Found: /favicon.ico
+2020-01-27 20:01:02,880 - billetera.views - Thread-2 -  INFO - Se ha consultado el Balance
+2020-01-27 20:13:46,672 - asyncio - MainThread -  DEBUG - Using selector: SelectSelector
