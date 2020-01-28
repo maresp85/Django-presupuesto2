@@ -22,3 +22,7 @@
 2020-01-27 19:47:45,125 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
 2020-01-27 19:47:46,989 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
 2020-01-27 19:53:50,085 - asyncio - MainThread -  DEBUG - Using selector: SelectSelector
+2020-01-27 19:54:01,313 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-27 19:56:57,665 - asyncio - MainThread -  DEBUG - Using selector: SelectSelector
+2020-01-27 19:57:05,388 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-27 19:58:00,959 - asyncio - MainThread -  DEBUG - Using selector: SelectSelector
