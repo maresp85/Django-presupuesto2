@@ -14,3 +14,10 @@
 2020-01-22 20:11:41,853 - billetera.views - Thread-16 -  INFO - Se ha consultado el Balance
 2020-01-27 19:10:56,919 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
 2020-01-27 19:10:58,242 - django.request - Thread-1 -  WARNING - Not Found: /favicon.ico
+2020-01-27 19:47:33,469 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-27 19:47:35,997 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-27 19:47:38,684 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-27 19:47:41,009 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-27 19:47:42,796 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-27 19:47:45,125 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-27 19:47:46,989 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
