@@ -1,0 +1,16 @@
+2020-01-21 23:16:56,447 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-21 23:17:11,801 - root - Thread-1 -  DEBUG - El valor del monto es 1200000
+2020-01-21 23:17:11,983 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-22 13:14:24,511 - billetera.views - Thread-5 -  INFO - Se ha consultado el Balance
+2020-01-22 13:14:24,783 - django.request - Thread-5 -  WARNING - Not Found: /favicon.ico
+2020-01-22 13:30:02,415 - asyncio - MainThread -  DEBUG - Using selector: SelectSelector
+2020-01-22 13:46:36,323 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-22 13:46:57,418 - root - Thread-1 -  DEBUG - El valor del monto es 50000
+2020-01-22 13:46:57,552 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-22 18:54:21,781 - billetera.views - Thread-6 -  INFO - Se ha consultado el Balance
+2020-01-22 18:54:34,616 - billetera.views - Thread-6 -  INFO - Se ha consultado el Balance
+2020-01-22 19:00:01,339 - root - Thread-11 -  DEBUG - El valor del monto es 500000
+2020-01-22 19:00:01,736 - billetera.views - Thread-11 -  INFO - Se ha consultado el Balance
+2020-01-22 20:11:41,853 - billetera.views - Thread-16 -  INFO - Se ha consultado el Balance
+2020-01-27 19:10:56,919 - billetera.views - Thread-1 -  INFO - Se ha consultado el Balance
+2020-01-27 19:10:58,242 - django.request - Thread-1 -  WARNING - Not Found: /favicon.ico

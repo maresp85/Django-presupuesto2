@@ -1,0 +1,98 @@
+{% load humanize %}
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Presupuesto</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Mi Presupuesto</span>
+                <table class="striped">
+                 <thead>
+                   <tr>
+                       <th>Balance</th>
+                       <th>Ingresos</th>
+                       <th>Gastos</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   {% for data in balance %}
+                   <tr>
+                     <td>$ {{ data.saldo|intcomma }}</td>
+                     <td>$ {{ data.ingresos|intcomma }}</td>
+                     <td>$ {{ data.gastos|intcomma }}</td>
+                   </tr>
+                   {% endfor %}
+                 </tbody>
+               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card deep-orange darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Movimientos</span>
+                <table class="striped">
+                 <thead>
+                   <tr>
+                       <th></th>
+                       <th>Categoría</th>
+                       <th>Tipo</th>
+                       <th>Monto</th>
+                       <th>Fecha</th>
+                       <th></th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   {% for data in movimiento %}
+                   <tr>
+                     <td>{{ forloop.counter|ordinal }}</td>
+                     <td>{{ data.categoria.descripcion|upper|truncatechars:"14" }}</td>
+                     <td>{{ data.tipo }}</td>
+                     <td>{{ data.monto|intcomma }}</td>
+                     <td>{{ data.fecha|date:"d/m/Y" }}</td>
+                     <td>
+                        <a href="{% url 'borrarMovimiento' data.id %}" class="white-text">
+                          <i class="material-icons">delete_forever</i>
+                        </a>
+                     </td>
+                   </tr>
+                   {% endfor %}
+                 </tbody>
+               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Botón para agregar nuevo movimiento-->
+      <div class="fixed-action-btn">
+        <a href="{% url 'movimiento' %}" class="btn-floating btn-large red">
+          <i class="large material-icons">add</i>
+        </a>
+      </div>
+
+    </div>
+
+  </body>
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
